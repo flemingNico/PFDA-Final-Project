@@ -4,33 +4,34 @@
 <https://github.com/flemingNico/PFDA-Final-Project.git>
 
 ## Description
-1-2 sentence description of what it will do and how it relevant to media and digital arts.
+My final project will be a short sprite animation that will be completely procedurally generated. It will be a totally new kind of animation style because none of it is physically drawn or painted; it will all be generated procedurally.
 
 ## Features
 - Feature 1
-	- Short explaination of how it will be executed.
+	- Change background color and set up window size.
 - Feature 2
-	- Short explaination of how it will be executed.
-- Feature N 
-	- Short explaination of how it will be executed.
+	- Make simplistic sprites out of procedurally generated shapes in window.
+- Feature 3 
+	- Switch between sprites to create the illusion of movement.
 
 ## Challenges
-- Short sentence of any skill or topic that needs to be learnt or researched.
-- Short sentence of any skill or topic that needs to be learnt or researched.
-- Short sentence of any skill or topic that needs to be learnt or researched.
+- I need to learn how to make more than 2 frames of animation.
+- I need to learn how to generate more than just rectangles.
+- I need to learn how to loop my animation.
+- I need to learn how to set the fps to play without keyboard input.
 
 ## Outcomes
 Ideal Outcome:
-- Briefly describe what is the ideal outcome?
+- Several frames of procedurally generated animation in a flipbook style in a new window. I could either do a running animation or a bouncing ball animation.
 
 Minimal Viable Outcome:
-- Briefly describe the bare essential for a good working outcome?
+- At least 2 frames of animation that flow together to create a rough animation within the specified window. (I could make a twinkling heart, a wave sequence, or a person blinking)
 
 ## Milestones
 
 - Week 1
-  1. Goal 1
-  2. Goal 2
+  1. Set up frame at least 1 & 2 of animation by procedurally generating particles.
+  2. Set background to specific color.
 
 - Week 2
   1. Goal 1
