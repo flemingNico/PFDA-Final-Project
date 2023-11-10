@@ -16,7 +16,7 @@ My final project will be a short sprite animation that will be completely proced
 
 ## Challenges
 - I need to learn how to make more than 2 frames of animation.
-- I need to learn how to generate more than just rectangles.
+- I might need to learn how to generate more than just rectangles.
 - I need to learn how to loop my animation.
 - I need to learn how to set the fps to play without keyboard input.
 
@@ -30,13 +30,13 @@ Minimal Viable Outcome:
 ## Milestones
 
 - Week 1
-  1. Set up frame at least 1 & 2 of animation by procedurally generating particles.
-  2. Set background to specific color.
+  1. Learn how to display more than 2 frames of animation with at least 8 frames.
+  2. Set up window in which animation will play and set its solid background.
 
 - Week 2
-  1. Goal 1
-  2. Goal 2
+  1. Set up frames of animation by procedurally generating particles.
+  2. Research RGB values for colors in animation.
 
 - Week N (Final)
-  1. Goal 1
-  2. Goal 2
+  1. Finish setting up frames through procedural generation.
+  2. Learn how to loop that animation to play several times until quit.
