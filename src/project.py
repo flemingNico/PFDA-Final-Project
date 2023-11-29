@@ -89,26 +89,26 @@ def big_heart(screen): #feature 2
     pink_4 = pygame.Color(222, 0, 81)
     pink_5 = pygame.Color(145, 0, 53)
     white = pygame.Color(255, 255, 255)
-#left eye
-    surf2 = pygame.Surface((15,15))
+#pink_1 giant rectangle
+    surf2 = pygame.Surface((60,80))
     surf2.fill(pink_1)
-    screen.blit(surf2, (445, 300))
-#right eye
-    surf2 = pygame.Surface((15,15))
-    surf2.fill(pink_2)
-    screen.blit(surf2, (515, 300))
-#middle part of mouth
-    surf2 = pygame.Surface((115,15))
-    surf2.fill(pink_3)
-    screen.blit(surf2, (430, 350))
-#left mouth curve
-    surf2 = pygame.Surface((15,30))
-    surf2.fill(pink_4)
-    screen.blit(surf2, (415, 325))
-#right mouth curve
-    surf2 = pygame.Surface((15,30))
-    surf2.fill(pink_5)
-    screen.blit(surf2, (545, 325))
+    screen.blit(surf2, (280, 180))
+#pink_1 left rectangle
+    surf2 = pygame.Surface((20, 60))
+    surf2.fill(pink_1)
+    screen.blit(surf2, (260, 200))
+#pink_1 right rectangle
+    surf2 = pygame.Surface((20, 40))
+    surf2.fill(pink_1)
+    screen.blit(surf2, (340, 200))
+#pink_1 bottom rectangle
+    surf2 = pygame.Surface((40, 20))
+    surf2.fill(pink_1)
+    screen.blit(surf2, (280, 260))
+#pink_1 top square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_1)
+    screen.blit(surf2, (360, 180))
 
 
 def main():
