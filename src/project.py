@@ -109,6 +109,46 @@ def big_heart(screen): #feature 2
     surf2 = pygame.Surface((20, 20))
     surf2.fill(pink_1)
     screen.blit(surf2, (360, 180))
+#pink_2 top square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_2)
+    screen.blit(surf2, (380, 180))
+#pink_2 right rectangle
+    surf2 = pygame.Surface((20, 60))
+    surf2.fill(pink_2)
+    screen.blit(surf2, (360, 200))
+#pink_2 middle rectangle
+    surf2 = pygame.Surface((20, 40))
+    surf2.fill(pink_2)
+    screen.blit(surf2, (340, 240))
+#pink_2 left rectangle
+    surf2 = pygame.Surface((20, 40))
+    surf2.fill(pink_2)
+    screen.blit(surf2, (320, 260))
+#pink_2 left square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_2)
+    screen.blit(surf2, (300, 280))
+#pink_3 top square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_3)
+    screen.blit(surf2, (400, 180))
+#pink_3 right rectangle
+    surf2 = pygame.Surface((20, 60))
+    surf2.fill(pink_3)
+    screen.blit(surf2, (380, 200))
+#pink_3 right square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_3)
+    screen.blit(surf2, (360, 260))
+#pink_3 middle square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_3)
+    screen.blit(surf2, (340, 280))
+#pink_3 left rectangle
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_3)
+    screen.blit(surf2, (320, 300))
 
 
 def main():
@@ -138,8 +178,6 @@ def main():
                         screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
                     else:
                         screen = pygame.display.set_mode(resolution)
-        # game logic
-        # render & display phase
         black = pygame.Color(0, 0, 0)
         screen.fill(black)
 
