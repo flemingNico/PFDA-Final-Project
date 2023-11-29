@@ -149,6 +149,22 @@ def big_heart(screen): #feature 2
     surf2 = pygame.Surface((20, 20))
     surf2.fill(pink_3)
     screen.blit(surf2, (320, 300))
+#pink_4 right rectangle
+    surf2 = pygame.Surface((20, 60))
+    surf2.fill(pink_4)
+    screen.blit(surf2, (400, 200))
+#pink_4 right square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_4)
+    screen.blit(surf2, (380, 260))
+#pink_4 middle square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_4)
+    screen.blit(surf2, (360, 280))
+#pink_4 left square
+    surf2 = pygame.Surface((20, 20))
+    surf2.fill(pink_4)
+    screen.blit(surf2, (340, 300))
 
 
 def main():
