@@ -3,31 +3,31 @@ import pygame
 
 
 def small_heart(screen): #feature 1
-    pink_1 = pygame.Color(255, 193, 204)
-    pink_2 = pygame.Color(255, 200, 210)
-    pink_3 = pygame.Color(255, 210, 220)
-    pink_4 = pygame.Color(255, 220, 230)
-    pink_5 = pygame.Color(255, 230, 240)
+    pink_1 = pygame.Color(255, 189, 213)
+    pink_2 = pygame.Color(255, 140, 182)
+    pink_3 = pygame.Color(255, 79, 144)
+    pink_4 = pygame.Color(235, 45, 114)
+    pink_5 = pygame.Color(200, 4, 75)
     white = pygame.Color(255, 255, 255)
 #first pillar for N
     surf = pygame.Surface((20, 100))
-    surf.fill(white)
+    surf.fill(pink_1)
     screen.blit(surf, (300, 200))
 #left most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(white)
+    surf.fill(pink_2)
     screen.blit(surf, (320, 215))
 #middle most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(white)
+    surf.fill(pink_3)
     screen.blit(surf, (340, 238))
 #right most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(white)
+    surf.fill(pink_4)
     screen.blit(surf, (355, 260))
 #second pillar for N/ pillar for F
     surf = pygame.Surface((20, 100))
-    surf.fill(white)
+    surf.fill(pink_5)
     screen.blit(surf, (375, 200))
 #top stroke of F
     surf = pygame.Surface((90, 20))
