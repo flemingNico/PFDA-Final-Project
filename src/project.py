@@ -1,4 +1,3 @@
-import random
 import pygame
 
 
@@ -40,27 +39,31 @@ def small_heart(screen): #feature 1
 
 
 def big_heart(screen): #feature 2
-    rainbow = pygame.Color(
-        random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+    pink_1 = pygame.Color(255, 189, 213)
+    pink_2 = pygame.Color(255, 140, 182)
+    pink_3 = pygame.Color(255, 79, 144)
+    pink_4 = pygame.Color(235, 45, 114)
+    pink_5 = pygame.Color(200, 4, 75)
+    white = pygame.Color(255, 255, 255)
 #left eye
     surf2 = pygame.Surface((15,15))
-    surf2.fill(rainbow)
+    surf2.fill(pink_1)
     screen.blit(surf2, (445, 300))
 #right eye
     surf2 = pygame.Surface((15,15))
-    surf2.fill(rainbow)
+    surf2.fill(pink_2)
     screen.blit(surf2, (515, 300))
 #middle part of mouth
     surf2 = pygame.Surface((115,15))
-    surf2.fill(rainbow)
+    surf2.fill(pink_3)
     screen.blit(surf2, (430, 350))
 #left mouth curve
     surf2 = pygame.Surface((15,30))
-    surf2.fill(rainbow)
+    surf2.fill(pink_4)
     screen.blit(surf2, (415, 325))
 #right mouth curve
     surf2 = pygame.Surface((15,30))
-    surf2.fill(rainbow)
+    surf2.fill(pink_5)
     screen.blit(surf2, (545, 325))
 
 
