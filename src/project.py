@@ -20,7 +20,18 @@ def small_heart(screen): #feature 1
     surf = pygame.Surface((20, 20))
     surf.fill(pink_2)
     screen.blit(surf, (360, 200))
-
+#pink_2 middle rectangle
+    surf = pygame.Surface((20, 40))
+    surf.fill(pink_2)
+    screen.blit(surf, (340, 220))
+#pink_2 left rectangle
+    surf = pygame.Surface((20, 40))
+    surf.fill(pink_2)
+    screen.blit(surf, (320, 240))
+#pink_2 left square
+    surf = pygame.Surface((20, 20))
+    surf.fill(pink_2)
+    screen.blit(surf, (300, 260))
 
 
 def big_heart(screen): #feature 2
