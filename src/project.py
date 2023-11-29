@@ -2,11 +2,11 @@ import pygame
 
 
 def small_heart(screen): #feature 1
-    pink_1 = pygame.Color(255, 189, 213)
-    pink_2 = pygame.Color(255, 140, 182)
-    pink_3 = pygame.Color(255, 79, 144)
-    pink_4 = pygame.Color(235, 45, 114)
-    pink_5 = pygame.Color(200, 4, 75)
+    pink_1 = pygame.Color(255, 186, 211)
+    pink_2 = pygame.Color(255, 105, 160)
+    pink_3 = pygame.Color(255, 38, 118)
+    pink_4 = pygame.Color(222, 0, 81)
+    pink_5 = pygame.Color(145, 0, 53)
     white = pygame.Color(255, 255, 255)
 #first pillar for N
     surf = pygame.Surface((20, 100))
@@ -39,11 +39,11 @@ def small_heart(screen): #feature 1
 
 
 def big_heart(screen): #feature 2
-    pink_1 = pygame.Color(255, 189, 213)
-    pink_2 = pygame.Color(255, 140, 182)
-    pink_3 = pygame.Color(255, 79, 144)
-    pink_4 = pygame.Color(235, 45, 114)
-    pink_5 = pygame.Color(200, 4, 75)
+    pink_1 = pygame.Color(255, 186, 211)
+    pink_2 = pygame.Color(255, 105, 160)
+    pink_3 = pygame.Color(255, 38, 118)
+    pink_4 = pygame.Color(222, 0, 81)
+    pink_5 = pygame.Color(145, 0, 53)
     white = pygame.Color(255, 255, 255)
 #left eye
     surf2 = pygame.Surface((15,15))
