@@ -2,39 +2,44 @@ import random
 import pygame
 
 
-def nf_symbol(screen): #feature 1
-    pink = pygame.Color(255, 193, 204)
+def small_heart(screen): #feature 1
+    pink_1 = pygame.Color(255, 193, 204)
+    pink_2 = pygame.Color(255, 200, 210)
+    pink_3 = pygame.Color(255, 210, 220)
+    pink_4 = pygame.Color(255, 220, 230)
+    pink_5 = pygame.Color(255, 230, 240)
+    white = pygame.Color(255, 255, 255)
 #first pillar for N
     surf = pygame.Surface((20, 100))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (300, 200))
 #left most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (320, 215))
 #middle most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (340, 238))
 #right most middle slash for N
     surf = pygame.Surface((20, 25))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (355, 260))
 #second pillar for N/ pillar for F
     surf = pygame.Surface((20, 100))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (375, 200))
 #top stroke of F
     surf = pygame.Surface((90, 20))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (375, 200))
 #middle stroke of F
     surf = pygame.Surface((50, 20))
-    surf.fill(pink)
+    surf.fill(white)
     screen.blit(surf, (375, 238))
 
 
-def smiley_face(screen): #feature 2
+def big_heart(screen): #feature 2
     rainbow = pygame.Color(
         random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
 #left eye
@@ -92,9 +97,9 @@ def main():
         screen.fill(black)
 
         if show_symbol:
-            nf_symbol(screen)
+            small_heart(screen)
         if show_face:
-            smiley_face(screen)
+            big_heart(screen)
 
         pygame.display.flip()
         dt = clock.tick(12)
