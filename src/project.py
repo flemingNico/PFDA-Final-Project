@@ -1,5 +1,5 @@
 import pygame
-
+import random
 
 def small_heart(screen): #feature 1
     pink_1 = pygame.Color(255, 186, 211)
@@ -213,6 +213,8 @@ def main():
                 running = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
+                    background = pygame.Color(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255))
+                    screen.fill(background)
                     show_symbol = not show_symbol
                     show_face = not show_face
                 elif event.type == pygame.KEYDOWN:
@@ -222,8 +224,7 @@ def main():
                         screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
                     else:
                         screen = pygame.display.set_mode(resolution)
-        black = pygame.Color(0, 0, 0)
-        screen.fill(black)
+
 
         if show_symbol:
             small_heart(screen)
@@ -237,3 +238,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
