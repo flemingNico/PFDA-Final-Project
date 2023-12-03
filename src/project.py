@@ -1,14 +1,14 @@
-import pygame
 import random
+import pygame
 
 
 class Particle():
 
-    def __init__(self, pos=(0,0), size=15, life=500):
+    def __init__(self, pos=(0,0), size=15, life=1000):
         self.pos = pos
         self.size = size
         self.color = pygame.Color(
-            random.randint(0, 200), random.randint(0, 0), random.randint(200, 255))
+            random.randint(200, 255), random.randint(0, 200), random.randint(0, 200))
         self.age = 0 # in milliseconds
         self.life = life # in milliseconds
         self.dead = False
@@ -117,7 +117,7 @@ def main():
                 running = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    background = pygame.Color(random.randint(1, 255), random.randint(1, 255), random.randint(1, 255))
+                    background = pygame.Color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
                     screen.fill(background)
                     show_symbol = not show_symbol
                     show_face = not show_face
