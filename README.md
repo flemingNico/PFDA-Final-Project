@@ -1,5 +1,5 @@
 # PROJECT TITLE
-Procedurally Generated Sprite Beating Heart Animation
+Procedurally Generated Beating Heart Animation
 
 ## Demo
 Demo Video: <URL>
