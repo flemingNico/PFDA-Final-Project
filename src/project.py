@@ -1,36 +1,36 @@
 import random
 import pygame
-
+import string
 
 class Particle():
 
-    def __init__(self, pos=(0,0), size=15, life=1000):
+    def __init__(self, pos=(0, 0), size=15, life=1000):
         self.pos = pos
         self.size = size
-        self.color = pygame.Color(
-            random.randint(200, 255), random.randint(0, 200), random.randint(0, 200))
-        self.age = 0 # in milliseconds
-        self.life = life # in milliseconds
-        self.dead = False
+        
+        rainbow = pygame.Color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        self.color = pygame.Color(rainbow)
+
+        self.age = 0
+        self.life = life
+        self. dead = False
         self.alpha = 255
-        self.surface =self.update_surface()
+        self.letter = random.choice(string.ascii_letters)
+
 
     def update(self, dt):
         self.age += dt
-        if self.age > self.life:
+        if self.age > self.life: 
             self.dead = True
         self.alpha = 255 * (1 - (self.age / self.life))
 
-    def update_surface(self):
-        surf = pygame.Surface((self.size*0.8, self.size*0.8))
-        pygame.draw.ellipse(surf, self.color, surf.get_rect())
-        return surf
-    
-    def draw(self, surface):
+    def draw(self, surs_drawing):
         if self.dead:
             return
-        self.surface.set_alpha(self.alpha)
-        surface.blit(self.surface, self.pos)
+        font = pygame.font.Font(None, self.size)
+        text = font.render(str(self.letter), True, self.color)
+        text.set_alpha(self.alpha)
+        surs_drawing.blit(text, self.pos) 
 
 
 class ParticleTrail():
@@ -39,20 +39,20 @@ class ParticleTrail():
         self.pos = pos
         self.size = size
         self.life = life
-        self.particles= []
+        self.particles = []
 
     def update(self, dt):
-        particle = Particle(self.pos, size=self.size, life=self.life)
+        particle = Particle(self.pos, size = self.size, life=self.life)
         self.particles.insert(0, particle)
         self._update_particles(dt)
         self._update_pos()
 
     def _update_particles(self, dt):
-        for idx, particle in enumerate(self.particles):
+        for idx, particle in enumerate (self.particles):
             particle.update(dt)
             if particle.dead:
                 del self.particles[idx]
-
+        
     def _update_pos(self):
         x, y = self.pos
         y += self.size
@@ -68,15 +68,15 @@ class Rain():
     def __init__(self, screen_res):
         self.screen_res = screen_res
         self.particle_size = 15
-        self.birth_rate = 1 # trails per frame
+        self.birth_rate = 1
         self.trails = []
-
+        
     def update(self, dt):
         self._birth_new_trails()
         self._update_trails(dt)
 
     def _update_trails(self, dt):
-        for idx, trail in enumerate(self.trails):
+        for idx, trail in enumerate (self.trails):
             trail.update(dt)
             if self._trail_is_offscreen(trail):
                 del self.trails[idx]
@@ -101,13 +101,13 @@ class Rain():
 
 def main():
     pygame.init()
-    pygame.display.set_caption("Heart Beat with Rain")
+    pygame.display.set_caption("Digital Rain")
     clock = pygame.time.Clock()
     dt = 0
     resolution = (800, 600)
     screen = pygame.display.set_mode(resolution)
     rain = Rain(resolution)
-    running = True
+    running = True 
     show_symbol = True
     show_face = False
     full_screen = False
@@ -117,8 +117,6 @@ def main():
                 running = False
             elif event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_SPACE:
-                    background = pygame.Color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
-                    screen.fill(background)
                     show_symbol = not show_symbol
                     show_face = not show_face
                 elif event.type == pygame.KEYDOWN:
@@ -128,8 +126,9 @@ def main():
                         screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
                     else:
                         screen = pygame.display.set_mode(resolution)
-
         rain.update(dt)
+        rainbow = pygame.Color(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+        screen.fill(rainbow)
 
         if show_symbol:
             small_heart(screen)
@@ -139,10 +138,11 @@ def main():
         rain.draw(screen)
         pygame.display.flip()
         dt = clock.tick(12)
+
     pygame.quit()
 
 
-def small_heart(screen): #feature 1
+def small_heart(screen):
     pink_1 = pygame.Color(255, 186, 211)
     pink_2 = pygame.Color(255, 105, 160)
     pink_3 = pygame.Color(255, 38, 118)
@@ -223,7 +223,7 @@ def small_heart(screen): #feature 1
     screen.blit(surf, (300, 220))
 
 
-def big_heart(screen): #feature 2
+def big_heart(screen):
     pink_1 = pygame.Color(255, 186, 211)
     pink_2 = pygame.Color(255, 105, 160)
     pink_3 = pygame.Color(255, 38, 118)
