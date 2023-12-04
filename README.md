@@ -2,7 +2,7 @@
 Procedurally Generated Beating Heart Animation
 
 ## Demo
-Demo Video: <URL>
+Demo Video: <https://youtu.be/HZ8wTUy_h24>
 
 ## GitHub Repository
 GitHub Repo: <<https://github.com/flemingNico/PFDA-Final-Project.git>>
