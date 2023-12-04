@@ -101,7 +101,7 @@ class Rain():
 
 def main():
     pygame.init()
-    pygame.display.set_caption("Digital Rain")
+    pygame.display.set_caption("Beating Heart")
     clock = pygame.time.Clock()
     dt = 0
     resolution = (800, 600)
